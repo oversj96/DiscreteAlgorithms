@@ -1,6 +1,6 @@
 prime_ends = [1, 3, 7, 9]
-primes = [2, 3, 5, 7, 9]
-max = 9
+primes = [2, 3, 5, 7]
+max = 7
 number = 10
 
 while len(primes) < 100000:  # Determine the first 100,000 primes.
