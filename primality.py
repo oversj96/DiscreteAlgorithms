@@ -1,11 +1,11 @@
-# Horribly slow method of finding primes. Was mostly just for fun.
+# Horribly slow method of finding large primes. Was mostly just for fun.
 
 prime_ends = [1, 3, 7, 9]
 primes = [2, 3, 5, 7]
 max = 7
 number = 10
 
-while len(primes) < 100000:  # Determine the first 100,000 primes.
+while len(primes) < 1000:  # Determine the first 100,000 primes.
     if number % 10 in prime_ends:
         for y in primes:
             if number % y is 0:
@@ -15,6 +15,6 @@ while len(primes) < 100000:  # Determine the first 100,000 primes.
                 max = number
                 break
     number += 1
-with open("primes.txt", "w") as txt:
+with open("primes_slow.txt", "w") as txt:
     for prime in range(0, len(primes)):
         txt.write(f"P = {prime+1} : {primes[prime]}\n")
