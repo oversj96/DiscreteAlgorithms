@@ -1,3 +1,5 @@
+# Horribly slow method of finding primes. Was mostly just for fun.
+
 prime_ends = [1, 3, 7, 9]
 primes = [2, 3, 5, 7]
 max = 7
