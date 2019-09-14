@@ -13,12 +13,14 @@ def gcd(dividend, divisor, verbose=False):
     i = 0
     while remainder > 0:
         if verbose:
-            print(f"Step {i+1}: {dividend} = ({dividend//divisor})({divisor})   +   {remainder}")
+            print(f"{'Step ' + str(i+1) + ':':<10} {dividend:>8} = {'(' + str(dividend//divisor) + ')'}"
+                  f"{'(' + str(divisor) + ')':<10}  +   {remainder}")
         dividend = divisor
         divisor = remainder
         remainder = dividend % divisor
         if remainder is 0 and verbose:
-            print(f"{'Too far'}: {dividend} = ({dividend//divisor})({divisor})   +   {remainder}")
+            print(f"{'Too far:':<10} {dividend:>8} = ({dividend//divisor}){'(' + str(divisor) + ')':<9}   "
+                  f"+   {remainder}")
         i += 1
     if verbose:
         print(f"The gcd({o_dividend}, {o_divisor}) is {str(divisor)}")
