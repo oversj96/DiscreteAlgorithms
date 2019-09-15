@@ -14,7 +14,9 @@ def lcm(x, y, verbose=False):
         print(f"The least common multiple of lcm({x}, {y}) is {lcm}")
     return lcm
 
-lcm(3524578, 2178309, True)
+
+if __name__ == "__main__":
+    lcm(3524578, 2178309, True)
 
 
 
