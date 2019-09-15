@@ -14,5 +14,5 @@ def lucas_numbers(signature, n):
 
 
 if __name__ == "__main__":
-    print(lucas_numbers([2, 1], 65))
+    print(lucas_numbers([2, 1], 78))
 
