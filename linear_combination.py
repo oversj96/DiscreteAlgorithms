@@ -5,6 +5,8 @@
 __author__ = "Justin Overstreet"
 __copyright__ = "oversj86.github.io"
 
+import sympy
+
 def gcd_linear_combo(dividend, divisor):
     remainder = dividend % divisor
     o_dividend = dividend
@@ -24,10 +26,11 @@ def gcd_linear_combo(dividend, divisor):
             remainders.append(remainder)
             quotients.append(dividend//divisor)
         i += 1
-        while i > 0:
-            substring = f"(substitute {str(remainders[i-1])}=(1)({str(dividends[i-1])}) - ({str(quotients[i-1])})({str(divisors[i-1])})"
-            print(f"{remainders[i]}=(1)({dividends[i]}) - ({quotients[i]})({remainders[i-1]}) {substring}")
-            i -= 1
-    print()
+    sub_state = 'right'
+    for step in range(len(remainders) - 1, -1, -1):
+        if sub_state is 'right':
+        
 
-gcd_linear_combo((3524578, 2178309)
+
+
+gcd_linear_combo(3524578, 2178309)

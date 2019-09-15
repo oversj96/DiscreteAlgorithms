@@ -1,18 +1,16 @@
 #!/usr/bin/env python
 
-"""lucas_numbers.py: Generate a sequence of lucas numbers up to the nth term"""
+"""fibonacci_numbers.py: Generate a sequence of fibonacci numbers up to the nth term"""
 
 __author__ = "Justin Overstreet"
 __copyright__ = "oversj86.github.io"
 
 
-def lucas_numbers(signature, n):
-    n += 1
+def fibonacci_numbers(signature, n):
     for i in range(0, n - len(signature)):
         signature.append(sum(signature[-2:]))
-    return signature[n - 1], signature[:n]
+    return signature[n-1], signature[:n]
 
 
 if __name__ == "__main__":
-    print(lucas_numbers([2, 1], 65))
-
+    print(fibonacci_numbers([0, 1], 65))
