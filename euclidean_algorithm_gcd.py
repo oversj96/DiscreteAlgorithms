@@ -20,7 +20,7 @@ def gcd(dividend, divisor, verbose=False):
         remainder = dividend % divisor
         if remainder is 0 and verbose:
             print(f"{'Too far:':<10} {dividend:>8} = "
-                  f"{'(' + str(dividend//divisor) + '(' + str(divisor) + ')':<12}"
+                  f"{'(' + str(dividend//divisor) + ')' + '(' + str(divisor) + ')':<12}"
                   f"+   {remainder}")
         i += 1
     if verbose:
