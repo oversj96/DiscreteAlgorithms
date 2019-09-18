@@ -16,7 +16,7 @@ def lcm(x, y, verbose=False):
 
 
 if __name__ == "__main__":
-    lcm(3524578, 2178309, True)
+    lcm(880, 17, True)
 
 
 
