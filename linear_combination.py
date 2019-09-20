@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""euclidean_algorithm_lcm.py: Uses the Euclidean algorithm to obtain the least common multiple"""
+"""linear_combination.py: Back substitutes factors from every step of the euclidean algorithm."""
 
 __author__ = "Justin Overstreet"
 __copyright__ = "oversj86.github.io"
@@ -27,9 +27,9 @@ def gcd_linear_combo(dividend, divisor):
             quotients.append(dividend//divisor)
         i += 1
     left_factor = dividends[i]
-    left_multiplier = quotients[i]
+    left_multiplier = 1
     right_factor = divisors[i]
-    right_multiplier = 1
+    right_multiplier = quotients[i]
     remainder = remainders[i]
     print(f"{remainder} = ({left_multiplier})({left_factor}) - ({right_multiplier})({right_factor})")
     while i is not 0:
@@ -74,4 +74,4 @@ def gcd_linear_combo(dividend, divisor):
 
 
 if __name__ == "__main__":
-    gcd_linear_combo(336, 60)
+    gcd_linear_combo(691, 103)
