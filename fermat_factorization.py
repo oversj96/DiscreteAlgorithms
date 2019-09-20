@@ -14,6 +14,7 @@ def fermat_factorization(number, verbose=False):
         return None
     else:
         n = m.ceil(m.sqrt(number))
+        i = 1
         if verbose:
             print(f"The square root of {number} is approximately {m.sqrt(number):.5f}, so we choose"
                   f" {n} for our n. \n")
@@ -22,12 +23,15 @@ def fermat_factorization(number, verbose=False):
             if verbose:
                 print(f"({n})^2 - {number} = {square} (is not a perfect square)")
             n += 1
+            i += 1
             square = (n**2) - number
         root = int(m.sqrt(square))
         if verbose:
             print(f"({n})^2 - {number} = {square} (is a perfect square: {square} = ({root})^2)\n")
             print(f"{number} = ({n})^2 - ({root})^2 = ({n} + {root})({n} - {root}) = ({n + root})"
                   f"({n - root})")
+            print(f"This process took {i} steps")
+        
         return n + root, n - root
 
 
@@ -37,4 +41,4 @@ def perfect_square(n):
 
 
 if __name__ == "__main__":
-    print(fermat_factorization(5429, True))
+    print(fermat_factorization(247, True))
