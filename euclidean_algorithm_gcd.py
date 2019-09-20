@@ -29,4 +29,4 @@ def gcd(dividend, divisor, verbose=False):
 
 
 if __name__ == "__main__":
-    gcd(3123, 1886, True)
+    gcd(691, 103, True)

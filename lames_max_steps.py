@@ -4,7 +4,7 @@
 euclidean algorithm."""
 
 __author__ = "Justin Overstreet"
-__copyright__ = "oversj86.github.io"
+__copyright__ = "oversj96.github.io"
 
 import numpy as np
 

@@ -3,7 +3,7 @@
 """fermat_factorization.py: Factor an odd natural number"""
 
 __author__ = "Justin Overstreet"
-__copyright__ = "oversj86.github.io"
+__copyright__ = "oversj96.github.io"
 
 import math as m
 
