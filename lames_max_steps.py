@@ -4,7 +4,7 @@
 euclidean algorithm."""
 
 __author__ = "Justin Overstreet"
-__copyright__ = "oversj96.github.io"
+__copyright__ = "oversj86.github.io"
 
 import numpy as np
 
@@ -16,4 +16,4 @@ def gcd_max_steps(divisor):
 
 
 if __name__ == "__main__":
-    print(gcd_max_steps(1886))
+    print(gcd_max_steps(2178309))

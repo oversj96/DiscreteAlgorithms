@@ -3,7 +3,7 @@
 """euclidean_algorithm_lcm.py: Uses the Euclidean algorithm to obtain the least common multiple"""
 
 __author__ = "Justin Overstreet"
-__copyright__ = "oversj96.github.io"
+__copyright__ = "oversj86.github.io"
 
 from euclidean_algorithm_gcd import gcd
 
@@ -16,7 +16,7 @@ def lcm(x, y, verbose=False):
 
 
 if __name__ == "__main__":
-    lcm(3524578, 2178309, True)
+    lcm(880, 17, True)
 
 
 

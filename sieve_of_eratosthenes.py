@@ -28,7 +28,7 @@ def SieveOfEratosthenes(n):
   
 if __name__=='__main__': 
     start = time.process_time()
-    n = 15000
+    n = 17000000
     print("Following are the prime numbers smaller")
     print ("than or equal to", n) 
     SieveOfEratosthenes(n) 

@@ -3,7 +3,7 @@
 """lucas_numbers.py: Generate a sequence of lucas numbers up to the nth term"""
 
 __author__ = "Justin Overstreet"
-__copyright__ = "oversj96.github.io"
+__copyright__ = "oversj86.github.io"
 
 
 def lucas_numbers(signature, n):

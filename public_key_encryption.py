@@ -3,7 +3,7 @@
 """public_key_encryption.py: Build and test the concept behind public key encryption"""
 
 __author__ = "Justin Overstreet"
-__copyright__ = "oversj96.github.io"
+__copyright__ = "oversj86.github.io"
 
 
 from fermat_factorization import fermat_factorization
