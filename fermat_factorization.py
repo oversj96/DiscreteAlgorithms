@@ -41,4 +41,4 @@ def perfect_square(n):
 
 
 if __name__ == "__main__":
-    print(fermat_factorization(247, True))
+    print(fermat_factorization(1901*4507, True))
