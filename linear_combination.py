@@ -81,4 +81,4 @@ def gcd_linear_combo(dividend, divisor, verbose=False):
 
 
 if __name__ == "__main__":
-    gcd_linear_combo(691, 103)
+    gcd_linear_combo(1900*4506, 2**16 - 1, True)
