@@ -8,7 +8,7 @@ __copyright__ = "oversj86.github.io"
 import math as m
 
 
-def fermat_factorization(number, verbose=False):
+def fermat_factorization(number, verbose=False, factors=[]):
     if number % 2 is 0 or type(number) is not int or number < 1:
         print(f"The number entered was invalid. Input must be an odd natural number.")
         return None
@@ -32,7 +32,12 @@ def fermat_factorization(number, verbose=False):
                   f"({n - root})")
             print(f"This process took {i} steps")
         
-        return n + root, n - root
+        if n - root != 1:
+            fermat_factorization(n - root, factors)
+            fermat_factorization(n + root, factors)
+        else:
+            factors.append(n + root)
+        return factors
 
 
 def perfect_square(n):
@@ -41,4 +46,4 @@ def perfect_square(n):
 
 
 if __name__ == "__main__":
-    print(fermat_factorization(1901*4507, True))
+    print(fermat_factorization(10003, True))

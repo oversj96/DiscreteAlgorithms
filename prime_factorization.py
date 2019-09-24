@@ -14,4 +14,4 @@ def prime_factorization(number):
     return factors
 
 if __name__ == "__main__":
-    print(prime_factorization(8561400))
+    print(prime_factorization(101*19))
