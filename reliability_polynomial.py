@@ -64,6 +64,10 @@ def get_working_subgraphs(g, count, work_count, network_list):
 
 
 if __name__ == "__main__":
+    # Add nodes, then add the edges.
+    # Edges are considered bi-directional in this module
+    # Below are two example networks.
+    # Network 1
     g = nx.MultiGraph(self_loops=False)
     g.add_node('a')
     g.add_node('b')
@@ -78,6 +82,7 @@ if __name__ == "__main__":
     g.add_edge('b', 'e')
     g.add_edge('d', 'e')
     print(f"Reliablility: {rel_poly(g)}")
+    # Network 2
     g = nx.MultiGraph(self_loops=False)
     g.add_node('a')
     g.add_node('b')
@@ -85,11 +90,11 @@ if __name__ == "__main__":
     g.add_node('d')
     g.add_node('e')
     g.add_node('f')
-    g.add_edge('a', 'b', id=1)
-    g.add_edge('a', 'd', id=2)
-    g.add_edge('a', 'e', id=3)
-    g.add_edge('d', 'e', id=4)
-    g.add_edge('b', 'e', id=5)
+    g.add_edge('a', 'b')
+    g.add_edge('a', 'd')
+    g.add_edge('a', 'e')
+    g.add_edge('d', 'e')
+    g.add_edge('b', 'e')
     g.add_edge('b', 'c')
     g.add_edge('e', 'f')
     g.add_edge('c', 'f')
