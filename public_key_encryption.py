@@ -3,7 +3,7 @@
 """public_key_encryption.py: Build and test the concept behind public key encryption"""
 
 __author__ = "Justin Overstreet"
-__copyright__ = "oversj86.github.io"
+__copyright__ = "oversj96.github.io"
 
 
 from fermat_factorization import fermat_factorization
@@ -25,7 +25,7 @@ def public_key_encrypt(p, q, t, e):
 
 
 def public_key_decrypt(pq, e, t):
-    p, q = fermat_factorization(pq)
+    p, q = fermat_factorization(pq, False)
     d = decipher_private_key((p-1)*(q-1), e)
     if type(t) is list:
         message = [(m ** d) % (p*q) for m in t]

@@ -17,14 +17,18 @@ def make_cipher(text):
         message = text
     else:
         return None
-    return public_key_encrypt(1901, 4507, message, 2**16 + 1)
+    cipher = public_key_encrypt(1901, 4507, message, 2**16 + 1)
+    print(f"Sent the encrypted information: {cipher}")
+    return cipher
+
 
 def decipher(message, number, e):
     decrypted_message = public_key_decrypt(number, e, message)
     return [chr(i) for i in decrypted_message]
 
+
 if __name__ == "__main__":
-    message, number, e = make_cipher("with spaces?")
+    message, number, e = make_cipher("o")
     print(message)
     print(number)
     print(e)
